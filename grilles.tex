@@ -1,0 +1,330 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tocloft}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{version}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+}
+\usepackage{textcomp}
+
+\title{Grilles}
+\author{Arnaud Paran}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\begin{lilypond}
+	{ \time 2/4 a \tuplet 3/2 {b c d} }
+\end{lilypond}
+
+\begin{lilypond}
+	up = \drummode {
+		cymra \times 8/3 { cymra8 r8 cymra8 }
+	}
+	hhatped = \drummode {
+		hhp
+	}
+	\new DrumStaff <<
+	\new DrumVoice { \voiceOne \up }
+	\new DrumVoice { \voiceTwo \hhatped }
+	>>
+\end{lilypond}
+
+\section{Grilles}
+\LARGE
+
+\subsection{Ain't No Sunshine}
+\normalsize
+De forme AABA, je l'ai tout de même écrit sous 12 mesures pour ne pas créer de confusion
+\LARGE
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im7 & Vm7 VII7 & Im7 & // \\ \hline  
+	Im7 & Vm7 VII7 & Im7 & // \\ \hline  
+	IVm7 & IVm7 & Vm7 & Vm7 \\ \hline  
+	Im7 & Vm7 VII7 & Im7 & // \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En Am
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Am7 & Em7 G7 & Am7 & // \\ \hline  
+	Am7 & Em7 G7 & Am7 & // \\ \hline  
+	Dm7 & Dm7 & Em7 & Em7 \\ \hline  
+	Am7 & Em7 G7 & Am7 & // \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Autumn Leaves}
+Se joue en AABC
+\newline
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	IVm7 & vii7 & iii$\Delta$ & vi$\Delta$ \\ \hline  
+	II$^{\o}$ & V7 & Im6 & // \\ \hline  \hline
+	II$^{\o}$ & V7 & Im6 & // \\ \hline  
+	IVm7 & vii7 & iii$\Delta$ & // \\ \hline  \hline
+	II$^{\o}$ & V7 & Im7 I$\flat$7 & viim7 vii$\flat$7 \\ \hline  
+	vi$\Delta$ & V7 & Im6 & // \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En Em
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Am7 & D7 & G$\Delta$ & C$\Delta$ \\ \hline  
+	F$\sharp^{\o}$ & B7 & Em6 & // \\ \hline  \hline
+	F$\sharp^{\o}$ & B7 & Em6 & // \\ \hline  
+	Am7 & D7 & G$\Delta$ & // \\ \hline  \hline
+	F$\sharp^{\o}$ & B7 & Em7 E$\flat$7 & Dm7 D$\flat$7 \\ \hline  
+	C$\Delta$ & B7 & Em6 & // \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Blue Bossa}
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im7 & // & IVm6 & // \\ \hline  
+	II$^{\o}$ & V7 & Im6 & // \\ \hline  
+	iiim7 & vi7 & II$\flat\Delta$ & // \\ \hline  
+	II$^{\o}$ & V7 & Im6 & II$^{\o}$ - V7 \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En Cm
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Cm7 & // & Fm6 & // \\ \hline  
+	D$^{\o}$ & G7 & Cm6 & // \\ \hline  
+	E$\flat$m7 & A$\flat$7 & D$\flat\Delta$ & // \\ \hline  
+	D$^{\o}$ & G7 & Cm6 & D$^{\o}$ - G7 \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Can't Stop}
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im & // & vii & // \\ \hline  
+	Vm & // & vi & // \\ \hline
+\end{tabular}
+\newline
+\newline
+
+En Am
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Am & // & G & // \\ \hline  
+	Em & // & F & // \\ \hline
+\end{tabular}
+\newpage
+
+\subsection{Fly me to the moon}
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	VIm7 & IIm7 & V7 & I$\Delta$7 \\ \hline  
+	IV$\Delta$7 & VII$^{\o}$ & III7$\flat$9 & VIm7 VI7 \\ \hline  
+	IIm7 & V7 & I$\Delta$ IV7 & IIIm7 VI7 \\ \hline  
+	IIm7 & V7 & I$\Delta$ & VII$^{\o}$ III7$\flat$9 \\ \hline  \hline
+	VIm7 & IIm7 & V7 & I$\Delta$7 \\ \hline  
+	IV$\Delta$7 & VII$^{\o}$ & III7$\flat$9 & VIm7 VI7 \\ \hline  
+	IIm7 & V7 & IIIm7 & VI7 \\ \hline  
+	IIm7 & V7 & I$\Delta$ & VII$^{\o}$ III7$\flat$9 \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En  C
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Am7 & Dm7 & G7 & C$\Delta$7 \\ \hline  
+	F$\Delta$7 & B$^{\o}$ & E7$\flat$9 & Am7 A7 \\ \hline  
+	Dm7 & G7 & C$\Delta$ F7 & Em7 A7 \\ \hline  
+	Dm7 & G7 & C$\Delta$ & B$^{\o}$ E7$\flat$9 \\ \hline  \hline
+	Am7 & Dm7 & G7 & C$\Delta$7 \\ \hline  
+	F$\Delta$7 & B$^{\o}$ & E7$\flat$9 & Am7 A7 \\ \hline  
+	Dm7 & G7 & Em7 & A7 \\ \hline  
+	Dm7 & G7 & C$\Delta$ & B$^{\o}$ E7$\flat$9 \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Hit the Road Jack}
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im & vii & vi & V7 \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En G$\sharp$m
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	G$\sharp$m & F$\sharp$ & E & D$\sharp$7 \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Isn't She Lovely}
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im7 & IV7/9 & vi/B & iii \\ \hline  
+	Im7 & IV7/9 & vi/B & iii \\ \hline  
+	vi$\Delta$ & V5+/7 & Im7 & IV7 \\ \hline  
+	vi/B & // & iii & // \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En C$\sharp$m
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	C$\sharp$m7 & F$\sharp$7/9 & A/B & E \\ \hline  
+	C$\sharp$m7 & F$\sharp$7/9 & A/B & E \\ \hline  
+	A$\Delta$ & G$\sharp$5+/7 & C$\sharp$m7 & F$\sharp$7 \\ \hline  
+	A/B & // & E & // \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Insensatez}
+\newpage
+
+\subsection{Long Train Running - doobie Brothers TODO}
+\newpage
+
+\subsection{Proud Mary TODO}
+\newpage
+
+\subsection{Purple Haze TODO}
+\newpage
+
+\subsection{Purple rain TODO}
+\newpage
+
+\subsection{Rhythm Changes}
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	II$\flat$7 II$^{\circ}$ & iiim7 III$^{\circ}$ & IVm7 vii7$\flat$9 & iiim7 vi7$\flat$9 \\ \hline  
+	II$\flat$13 & V$\flat$7 V$^{\circ}$ & IVm7 vii7$\flat$9 & iiim7 vi7$\flat$9 \\ \hline  \hline 
+	II$\flat$7 II$^{\circ}$ & iiim7 III$^{\circ}$ & IVm7 vii7$\flat$9 & iiim7 vi7$\flat$9 \\ \hline  
+	II$\flat$13 & V$\flat$7 V$^{\circ}$ & II$\flat$7 & II$\flat$6 \\ \hline  \hline
+	IV9 & // & vii13 & // \\ \hline  
+	iii9 & // & vi13 & // \\ \hline  \hline
+	II$\flat$7 II$^{\circ}$ & iiim7 III$^{\circ}$ & IVm7 vii7$\flat$9 & iiim7 vi7$\flat$9 \\ \hline  
+	II$\flat$13 & V$\flat$7 V$^{\circ}$ & IVm7 vii7$\flat$9 & iiim7 vi7$\flat$9 \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En A
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	B$\flat$7 B$^{\circ}$ & Cm7 C$\sharp^{\circ}$ & Dm7 G7$\flat$9 & Cm7 F7$\flat$9 \\ \hline  
+	B$\flat$13 & E$\flat$7 E$^{\circ}$ & Dm7 G7$\flat$9 & Cm7 F7$\flat$9 \\ \hline  \hline 
+	B$\flat$7 B$^{\circ}$ & Cm7 C$\sharp^{\circ}$ & Dm7 G7$\flat$9 & Cm7 F7$\flat$9 \\ \hline  
+	B$\flat$13 & E$\flat$7 E$^{\circ}$ & B$\flat$7 & B$\flat$6 \\ \hline  \hline
+	D9 & // & G13 & // \\ \hline  
+	C9 & // & F13 & // \\ \hline  \hline
+	B$\flat$7 B$^{\circ}$ & Cm7 C$\sharp^{\circ}$ & Dm7 G7$\flat$9 & Cm7 F7$\flat$9 \\ \hline  
+	B$\flat$13 & E$\flat$7 E$^{\circ}$ & Dm7 G7$\flat$9 & Cm7 F7$\flat$9 \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{So What TODO}
+\newpage
+
+\subsection{Summertime}
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Im7 & // & // & // I7$\flat$9 \\ \hline  
+	IVm7 vii7 & iiim7 vi7 & II$^{\o}$ & V7$\flat$9 \\ \hline  
+	Im7 & // & // & IV7 vii7$\flat$9 \\ \hline  
+	iii$\Delta$ Im7 & II$^{\o}$ V7$\flat$13 & Im7 & II$^{\o}$ V7$\flat$13 \\ \hline  
+\end{tabular}
+\newline
+\newline
+
+En Am
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Am7 & // & // & // A7$\flat$9 \\ \hline  
+	Dm7 G7 & Cm7 F7 & B$^{\o}$ & E7$\flat$9 \\ \hline  
+	Am7 & // & // & D7 G7$\flat$9 \\ \hline  
+	C$\Delta$ Am7 & B$^{\o}$ E7$\flat$13 & Am7 & B$^{\o}$ E7$\flat$13 \\ \hline  
+\end{tabular}
+\newpage
+
+\subsection{Superstition TODO}
+\newpage
+
+\subsection{Sweet Home chicago TODO}
+\newpage
+
+\subsection{The Wall - Pink Floyd TODO}
+\newpage
+
+\section{Rythmes}
+
+\subsection{Jazz}
+\subsection{Bossa Nova}
+\subsection{Blues}
+\subsection{Rock}
+
+\appendix
+\large
+\section{Fonctions}
+Majeur
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Degré & Fonction princ & Fontion m & Fonction \\ \hline  
+	VII & & & Dg \\ \hline
+	vii & & & SS \\ \hline
+	VI & & Tp & Sg \\ \hline
+	V & D & & \\ \hline
+	IV & S & & \\ \hline
+	III & & Dp & Tg \\ \hline
+	II & & Dp & DD \\ \hline
+	I & T & (D)[S] & \\ \hline
+\end{tabular}
+\newline
+\newline
+
+Mineur
+
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Degré & Fonction princ & Fontion M & Fonction \\ \hline  
+	vii & & dP & \\ \hline
+	vi & & sP & tG \\ \hline
+	V & d & D & \\ \hline
+	IV & s & & \\ \hline
+	iii & & tP & dG \\ \hline
+	II & & & sG \\ \hline
+	I & t & & \\ \hline
+\end{tabular}
+
+\section{Accords}
+\begin{tabular}{ | c | c | c | c | } \hline			
+	Not. & Nom & Notes & Expl \\ \hline  
+	X7 & septième & 1,3,5,7$\flat$ & \\ \hline
+	Xm7, X-7 & septième mineure & 1,3$\flat$,5,7$\flat$ & \\ \hline
+	Xm$\Delta$, XmM7 & mineur de septième majeure & 1,3$\flat$,5,7 & \\ \hline
+	X$\Delta$, XM7 & septième majeure & 1,3,5,7 & \\ \hline
+	X$^{\o}$, X7$\flat$5 & septième semi diminuée & 1,3$\flat$,5$\flat$,7$\flat$ & \\ \hline
+	X$^{\circ}$, Xdim7 & septième diminuée & 1,3$\flat$,5$\flat$,7$\flat\flat$ & \\ \hline
+	X7$\flat$9 & ? & 1,3,5,7$\flat$, 9$\flat$ & \\ \hline
+	X6 & sixte & 1,3,5,6 & \\ \hline
+	Xm6 & sixte mineure & 1,3$\flat$,5,6 & \\ \hline
+	X13 & treizième majeure & 1,3,5,7,9,13 & \\ \hline
+	X7$\flat$13 & ? & 1,3,5,7$\flat$,9$\flat$,13$\flat$ ??? & \\ \hline
+\end{tabular}
+\end{document}
